@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- EXTERNAL IN HEAD -->
+    <!-- harus menulis defer biar script ditunda sampai HTML selesai dimuat, sama seperti kita menulis script di bagian akhir body -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Belajar JavaScript</h1>
+    </header>
+    <section class="main-section">
+        <section class="form-section">
+            <h2>Form Kalkulator Produk</h2>
+            <form>
+                <label for="nama">Nama Produk</label>
+                <input type="text" id="nama"><br>
+
+                <label for="jumlah">Jumlah</label>
+                <input type="number" id="jumlah"><br>
+
+                <label for="harga">Harga Satuan</label>
+                <input type="number" id="harga"><br>
+
+                <button type="button" onclick="hitungTotal()">Hitung Total</button>
+                <!-- <p>Total Harga<span id="totalHarga"></span></p> -->
+            </form>
+            <div class="container-total">
+                <h3 id="judulTotal">Total Harga</h3>
+                <h1 id="totalHarga"></h1>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
